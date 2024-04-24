@@ -26,7 +26,7 @@
             </p>
         </header>
 
-        <form>
+        <form id="form">
             <fieldset>
                 
                     <legend>Informações pessoais</legend>
@@ -46,12 +46,12 @@
     
                     <div class="input-wrapper">
                         <label for="email">Email <span>(Digite um email válido)</span></label>
-                        <input type="email" id="email">
+                        <input type="email" id="email" required>
                     </div>
     
                     <div class="input-wrapper">
                         <label for="password">Senha <span>(Mínimo de 6 caracteres)</span></label>
-                        <input type="password" id="password" minlength="6">
+                        <input type="password" id="password" minlength="6" required>
                     </div>
                 
             </fieldset>
@@ -74,7 +74,7 @@
                     <div class="horizontal-time">
                         <div class="input-wrapper">
                             <label for="first-date">Data <span>(DD/MM/AAAA)</span></label>
-                            <input class="date" type="date" id="first-date">
+                            <input class="date" type="date" id="first-date" >
                         </div>
 
                         <div class="input-wrapper space-left">
@@ -107,6 +107,9 @@
                 
             </fieldset>
         </form>
+        <footer class="buttons">
+            <input class="button" type="submit" form="form" value="Salvar">
+        </footer>
     </div>
 </body>
 

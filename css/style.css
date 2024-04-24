@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pagina {
+    width: 1080px;
+    margin: 140px auto 0;
+}
+
+body {
+    background: #C1BCCC;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    height: 435px;
+    width: 100%;
+    background-color: #535971;
+}
+
+h1,
+legend,
+h2 {
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+}
+
+label,
+input,
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 48px;
+    color: white;
+}
+
+header p {
+    font-size: 20px;
+    color: white;
+    margin: 18px 0 60px;
+
+    width: 415px;
+    height: 55px;
+}

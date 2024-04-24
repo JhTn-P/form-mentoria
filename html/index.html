@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="pagina">
+    <div class="page">
         <header>
             <h1>
                 Mentoria
@@ -27,10 +27,38 @@
         </header>
 
         <form>
-
+            <fieldset>
+                <div id="personal-info">
+                    <legend>Informações pessoais</legend>
+                    <div class="horizontal">
+                        <div class="input-wrapper">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"
+                            title="Não é permitido números neste campo" required>
+                        </div>
+    
+                        <div class="input-wrapper">
+                            <label for="last-name">Sobrenome</label>
+                            <input type="text" id="last-name" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"
+                            title="Não é permitido números neste campo" required>
+                        </div>
+                    </div>
+    
+                    <div class="input-wrapper">
+                        <label for="email">Email <span>(Digite um email válido)</span></label>
+                        <input type="email" id="email">
+                    </div>
+    
+                    <div class="input-wrapper">
+                        <label for="password">Senha <span>(Mínimo de 6 caracteres)</span></label>
+                        <input type="password" id="password" minlength="6">
+                    </div>
+                </div>
+            </fieldset>
+            
+            
         </form>
     </div>
-
 </body>
 
 </html>
